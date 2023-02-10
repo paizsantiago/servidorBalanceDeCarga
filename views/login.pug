@@ -1,0 +1,14 @@
+html
+    head
+        title='login'
+        style
+            include styles.css
+    body
+        h1="Iniciar sesion"
+        div
+            form(action="/login" method="POST") 
+                input(type="text" name="username" placeholder="usuario")
+                input(type="text" name="password" placeholder="contraseña")
+                input(type="submit" value="Enviar")
+
+        a(href="/register") Registrarse

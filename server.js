@@ -184,10 +184,6 @@ function checkAuth(req, res, next) {
   }
 }
 
-app.listen(PORT, () => {
-  console.log("Listen on ", PORT);
-});
-
 app.get("/", checkAuth, getHome, () => {
   console.log(PORT);
 });
